@@ -129,7 +129,7 @@ label="Переключатель навигации">
 </main>
 <div class="container py-5">
   <h2 class="mb-4">Оставить заявку</h2>
-  <form id="contactForm" action="/submit" method="POST">
+  <form id="contactForm" onsubmit="return handleSubmit(event)">
     <div class="mb-3">
       <label for="name" class="form-label">Ваше имя</label>
       <input type="text" class="form-control" id="name" name="name" required>
@@ -145,7 +145,7 @@ label="Переключатель навигации">
     
     <!-- Блок reCAPTCHA -->
     <div class="mb-3">
-      <div class="g-recaptcha" data-sitekey="ТВОЙ_SITE_KEY"></div>
+      <div class="g-recaptcha" data-sitekey="6Le9YQstAAAAAFUOlTtfNmje2j3haRYlLFL58ts9"></div>
     </div>
     
     <button type="submit" class="btn btn-primary">Отправить заявку</button>
@@ -169,5 +169,19 @@ label="Переключатель навигации">
 </footer>
 </div>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+function handleSubmit(event) {
+  event.preventDefault();
+  var token = grecaptcha.getResponse();
+  if (token.length > 0) {
+    alert('Заявка успешно отправлена!');
+    document.getElementById('contactForm').reset();
+    grecaptcha.reset();
+  } else {
+    alert('Пройдите проверку CAPTCHA!');
+  }
+  return false;
+}
+</script>
 </body>
 </html>

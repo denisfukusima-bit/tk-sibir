@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ТК СИБИРЬ</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+crossorigin="anonymous">
+<style>
+.card-img-top {
+object-fit: cover;
+object-position: center;
+}
+</style>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<div class="container">
+<a class="navbar-brand" href="#">
+<img src="imagies/logo.png" alt="Иконка" width="auto" height="64px">
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-
+label="Переключатель навигации">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarText">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<li class="nav-item">
+<a class="nav-link" href="#">Пункт меню №1</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Пункт меню №2</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Пункт меню №3</a>
+</li>
+</ul>
+<span class="navbar-text">
+ТК СИБИРЬ
+</span>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<div class="container py-5">
+<div class="p-5 mb-4 bg-light rounded-3">
+<div class="container-fluid py-5">
+<h1 class="display-5 fw-bold">ТК СИБИРЬ</h1>
+<p class="col-md-8 fs-4">Транспортировка грузов по России и всему миру</p>
+<button class="btn btn-success btn-lg" type="button">Цены</button>
+</div>
+</div>
+</div>
+<div class="album py-5 bg-light">
+<div class="container">
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+<div class="col">
+<div class="card shadow-sm">
+<img src="imagies/1.jpg" class="card-img-top" width="100%" height="225" alt="Картинка услуги, преимущества и т.д.">
+<div class="card-body">
+<p class="card-title h5">Контейнерные перевозки</p>
+<p class="card-text">Наиболее популярный тип перевозок, который позволяет
+сократить объем промежуточных погрузочно-разгрузочных
+работ, значительно снизив стоимость</p>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card shadow-sm">
+<img src="imagies/2.jpg" class="card-img-top" width="100%" height="225" alt="Картинка услуги, преимущества и т.д.">
+<div class="card-body">
+<p class="card-title h5">Комплексные отраслевые решения</p>
+<p class="card-text">Учитываем специфику задач каждой отрасли, создавая
+оптимальные логистические схемы. Поможем значительно
+сократить расходы на перевозки!</p>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card shadow-sm">
+<img src="imagies/3.jpg" class="card-img-top" width="100%" height="225" alt="Картинка услуги, преимущества и т.д.">
+<div class="card-body">
+<p class="card-title h5">Международные морские перевозки</p>
+<p class="card-text">Отличный способ доставки негабаритных и больших
+партий груза на большие расстояния. Недорогой способ
+доставки, однако зачастую медленный
+
+</p>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card shadow-sm">
+<img src="imagies/4.jpg" class="card-img-top" width="100%" height="225" alt="Картинка услуги, преимущества и т.д.">
+<div class="card-body">
+<p class="card-title h5">Внутренние перевозки по России</p>
+<p class="card-text">Сборные и генеральные грузы, которые не требуют
+специального температурного режима при перевозке</p>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card shadow-sm">
+<img src="imagies/5.jpg" class="card-img-top" width="100%" height="225" alt="Картинка услуги, преимущества и т.д.">
+<div class="card-body">
+<p class="card-title h5">Комплексные отраслевые решения</p>
+<p class="card-text">Учитываем специфику задач каждой отрасли, создавая
+оптимальные логистические схемы. Поможем значительно
+сократить расходы на перевозки!</p>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card shadow-sm">
+<img src="imagies/6.jpg" class="card-img-top" width="100%" height="225" alt="Картинка услуги, преимущества и т.д.">
+<div class="card-body">
+<p class="card-title h5">Импорт из Китая</p>
+<p class="card-text">Импорт оборудования
+Импорт готовой продукции
+Контрактное производство продукции</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<div class="container py-5">
+  <h2 class="mb-4">Оставить заявку</h2>
+  <form id="contactForm" action="/submit" method="POST">
+    <div class="mb-3">
+      <label for="name" class="form-label">Ваше имя</label>
+      <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="mb-3">
+      <label for="phone" class="form-label">Телефон</label>
+      <input type="tel" class="form-control" id="phone" name="phone" required>
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Сообщение</label>
+      <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+    </div>
+    
+    <!-- Блок reCAPTCHA -->
+    <div class="mb-3">
+      <div class="g-recaptcha" data-sitekey="ТВОЙ_SITE_KEY"></div>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Отправить заявку</button>
+  </form>
+</div>
+<div class="container">
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+<div class="col-md-4 mb-0 text-muted">
+<p>Контакты и реквизиты</p>
+ <p>Выполнил: Сердюков Данил Максимович, группа БУН24-01</p>
+<p>© 2026 ТК СИБИРЬ</p>
+</div>
+<a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+<img src="imagies/logo.png" alt="Иконка" height="64px">
+</a>
+<ul class="nav col-md-4 justify-content-end">
+<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Главная</a></li>
+<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Каталог</a></li>
+<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Контакты</a></li>
+</ul>
+</footer>
+</div>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>
